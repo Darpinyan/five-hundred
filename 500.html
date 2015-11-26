@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<link type="text/css" rel="stylesheet" href="bootstrap.css">
+        <title>500 the Card Game</title>
+	</head>
+	<body>
+	<div id= "nav">
+		<div class="nav_container">
+			<ul class="pull-left">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://www.bicyclecards.ca/pages/card_game_glossary/35.php"/>Glossary</a><li>
+			</ul>
+			<ul class="pull-right">
+				<li><a href="#">History</a></li>
+				<li><a href="#">Records</a></li>
+				<li><a href="#">Buy Cards</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="jumbotron">
+      <div class="container">
+        <h1>500:</h1>
+        <p>The trick-taking team card startegy game.</p>
+		<p>4 to 6 players.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div> 
+	<div id="deck"></div>
+		<div class="container">
+		<h2>The Deck</h2>
+			<p>The deck is organized differently than for other card games. These instructions will be for the four player game. There will be a different section for the <a href="#">six player option</a>.</p>
+			<p>Take a standard 52 deck of cards. First, remove the 2s and 3s from the deck. Then, add one Joker to the deck. This should give you 45 cards. If you are using old casino cards, be sure that the Joker is not marked in a way that you are able to tell it appart from the rest of the deck.</p>
+			<p>The deck will follow the below ranking systems. 
+				<table class="cards-table">
+					<tbody>
+						<thead><th colspan="13"><em>Rank of Cards in <strong>Trump</strong> Suit</em></th><thead>
+						<tr>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Joker_red_02.svg/200px-Joker_red_02.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Jack_of_hearts_en.svg/200px-Jack_of_hearts_en.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Jack_of_diamonds_en.svg/200px-Jack_of_diamonds_en.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/01_of_hearts_A.svg/200px-01_of_hearts_A.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/King_of_hearts_en.svg/200px-King_of_hearts_en.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Queen_of_hearts_en.svg/200px-Queen_of_hearts_en.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/10_of_hearts_-_David_Bellot.svg/200px-10_of_hearts_-_David_Bellot.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/09_of_hearts.svg/200px-09_of_hearts.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/08_of_hearts.svg/200px-08_of_hearts.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/07_of_hearts.svg/200px-07_of_hearts.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/06_of_hearts.svg/200px-06_of_hearts.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/05_of_hearts.svg/200px-05_of_hearts.svg.png"/></td>
+							<td><img class="cards-trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/04_of_hearts.svg/200px-04_of_hearts.svg.png"/></td>
+						</tr>
+					</tbody>
+				</table>
+				In the above Trump suite the Joker is <strong>always</strong> the highest card. Nothing can beat the Joker. The second highest card is the Jack of Trump, ie, the Jack of the suit of Trump. The third highest card is the Jack of the oposite suit. For Hearts, Diamonds are opposite and vice-versa. For Clubs, Spades are opposite and vice-versa. After those three cards are organized in that order, the order of Trump goes highest to lowest as shown, Ace down to 4.
+				<table class="cards-table">
+					<tbody>
+						<thead><th colspan="13"><em>Rank of Cards in <strong>Plain</strong> Suits</em></th><thead>
+						<tr>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Joker_red_02.svg/200px-Joker_red_02.svg.png"/></td>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/01_of_spades_A.svg/200px-01_of_spades_A.svg.png"/></td>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/King_of_spades_en.svg/200px-King_of_spades_en.svg.png"/></td>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Queen_of_spades_en.svg/200px-Queen_of_spades_en.svg.png"/></td>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Jack_of_spades_en.svg/200px-Jack_of_spades_en.svg.png"/></td>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/10_of_spades_-_David_Bellot.svg/200px-10_of_spades_-_David_Bellot.svg.png"/></td>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/09_of_spades.svg/200px-09_of_spades.svg.png"/></td>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/08_of_spades.svg/200px-08_of_spades.svg.png"/></td>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/07_of_spades.svg/200px-07_of_spades.svg.png"/></td>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/06_of_spades.svg/200px-06_of_spades.svg.png"/></td>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/05_of_spades.svg/200px-05_of_spades.svg.png"/></td>
+							<td><img class="cards-plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/04_of_spades.svg/200px-04_of_spades.svg.png"/></td>
+						</tr>
+					</tbody>
+				</table>
+			<p>The Joker</p>
+				<ul style="list-style-type: square">
+					<li>Where there is a trump suit, the joker belongs to the that suit, and becomes the highest trump card. It must be played if necessary to follow suit, and it may be played only when a card of the trump suit can legally be played. Example, If Spades are trump, but Clubs were led and you have a Club in your hand, you may not play the Joker, this will be explained in detail below.</li>
+					<li>In a No-Trump contract (Nello is included), the joker is a suit by itself but is also the highest card of any suit and wins any trick to which it can legally be played. The holder of the joker may not play it if they can follow suit to the suit that was led.</li>
+					<li>If a player leads the joker in a No-Trump contract, he must specify the suit that others must play to, but the joker wins the trick.</li>
+				</ul> 			
+			</p>	
+		</div>
+	<div class="teams">
+		<div class="container">
+		<h2>Teams</h2>
+			<h3>Four Players</h3>
+				<p>The four player game is very exciting and requires a great amount of subtle communication between partners, key word being: <strong>SUBTLE</strong>. Players are not allowed to tell their teammates what is in their hand; however, they are allowed to communicate minimally during the bidding phase (shown below), and during the run of play. Teammates sit across from one another.</p> 
+				<table class="team-table">
+					<tbody>
+						<thead><th colspan="3">Players at the Table</th></thead>
+							<tr>
+								<td class="blank"></td>
+								<td class="player-sith">Player 1<img class= "player-pic" src="http://goo.gl/D2v9Ds"></td>
+								<td class="blank"></td>
+							</tr>
+							<tr>
+								<td class="player-jedi">Player 4<img class= "player-pic" src="http://goo.gl/QCV9pI"></td>
+								<td class="center"><strong>Playing Table<strong></td>
+								<td class="player-jedi">Player 2<img class= "player-pic" src="http://goo.gl/hIBrl9"></td>
+							</tr>
+							<tr>
+								<td class="blank"></td>
+								<td class="player-sith">Player 3<img class= "player-pic" src="http://goo.gl/o0APlj"></td>
+								<td class="blank"></td>
+							</tr>
+					</tbody>
+				</table>
+			<h3>Six Players</h3>
+			<p> to be added later</p>
+		</div>	
+	</div>
+	<div class="dealing">
+		<div class="container">	
+	<h2>Dealing the Cards</h2>
+			<p>Every player will have a chance to be the dealer. Pick a player to start with. Have that player shuffle the cards. Then, the player to their right will cut the deck. The cut must leave at least 4 cards at the bottom.</p>
+			<p>The dealer then deals 10 cards, face down to each player clockwise starting with the player on the dealer's left. The dealer can deal the cards however they wish. At any time the dealer must put 5 cards, face down in the middle of the table. This is called the "Widdow." Tradition dictates that the dealer distribute the cards in a 3 cards, 4 cards, 3 cards at-at-a-time pattern, placing 3 cards in the Widdow after the first round of 3 cards were distributed and two cards after the round of 4 cards were distributed.</p>  
+	</div>
+	</div>
+	<div id="trump">
+	<div class="container">
+		<h2>Trump</h2>
+		<p>Trump is a selected suit that rules the hand. Any trump card is automatically higher than any other non-trump suit. For example, if Spades are trump, the four of Spades wins the trick over the Ace of Hearts.</p>
+	</div>	
+	</div>
+	<div id="bidding">
+	<div class="container">
+	<h2>Bidding</h2>
+	<p>Once the cards have been dealt, players have a few moments to look at and organize their hands. Once all the players are ready, bidding starts. Bidding begins with the player to the left of the dealer and goes clockwise. The dealer bids last. Each player only bids one time.</p> 
+	<p>When a player bids, they may do <strong>Bid</strong> or <strong>Pass</strong>.</p>
+		<ul>
+			<li class="bidding">Bid</li>
+				<ul>
+					<li>A bid must name the number of tricks from six to 10, together with the suite, which will establish the trump suit. Example, saying "Six Hearts" indicates that if you win the bid, you and your partner will take six of the 10 "tricks" this round.</li>
+					<li>If there has been a previous bid, each subsequent bid must be higher. A player must bid more tricks, or the same number of tricks in a higher ranking suit. See "Scoring Table" for order of suits.</li>
+					<li>If your partner has bid "Six Hearts," you may bid them up to "Seven Hearts" or higher if you believe that between the two hands, you can take seven or more of the tricks.</li>
+					<li>A player may bid an "<em>Inklle</em>." This means, that your hand might be enough to win about five tricks but might not be enough to get the full six required to make a bid. This opens the door for your partner to know what you have and allows them the posibility of bidding you up. This also allows the other team to know. <strong>IF</strong> your Inkle wins the bid, you and your partner <strong>MUST</strong> take at least six tricks in order to not go set.</li>
+					<li>Remember, you and your partner are working together.</li>
+					<li>Below is an example of a bidding cycle.</li>
+						<ul>
+							<li><strong>Player 1</strong> <em>(first player left of the dealer)</em>: "Inkle Clubs (remember this means a weak 'Six Club' bid"</li>
+							<li><strong>Player 2</strong>: "Pass."</li>
+							<li><strong>Player 3</strong>: "Seven Clubs" - this means that Player 3 will help their partner win a Seven Club bid.</li>
+								<ul>
+									<li>Player 4 must now bid higher than seven clubs. 
+								</ul>
+							<li><strong>Player 4</strong>: Seven Diamonds</li>
+							<li><strong>Player 4 wins the bid!</strong></li>
+						</ul>
+					<li>Once the winning bid is established; whether it be a Trump or No-Trump hand, the winner receives the Widdow and enters into a "contract" to win the amount of tricks promised. See the "Playing" section for the next phase of the game.</li>	
+				</ul>
+			<li class="bidding">Pass</li>
+				<ul>
+					<li>This simply means that you do not think you can take more than six tricks in a particular suit.</li>
+					<li>Or you believe that based on what your opponent bid, you believe your hand can take enough tricks to make them go "set."</li>
+					<li>If everyone passes, the hand is aborted and there is no score. The dealer then collects all the cards, shuffles, cuts, and deals again. Bidding then resumes as normal until a successful bid is won.</li>
+				</ul>	
+			<li class="bidding">Types of Bids</li>
+				<ul>
+					<li  class="bids">Trump Bid</li>
+						<ul>
+							<li>This type of bid is the most common. Players bid between six and 10 tricks based on the suit they wish to be trump.</li>
+						</ul>
+					<li class="bids">Nello</li>
+						<ul>
+							<li>The objective of Nello is to lose all the tricks.</li>
+							<li>Nello has a scoring value of 250.</li>
+							<li>All bids lower than eight Spades lose to a Nello bid.</li>
+							<li>A team may only bid Nello if they are in the negative score (below zero) also known as "in the hole".</li>
+							<li>If Nello is the "contract" the player's teammate who bid Nello takes their lowest (or strategically best card) from their hand and adds it to the Widdow. That player abandons the rest of their hand and watches as the "contracted" player plays against the remaining players.</li>
+							<li>If the contractor wins a trick, the penalty is to "go-set" 250 points, and the opponent team scores 10 points for every trick the Contractor takes.</li>
+						</ul>
+					<li class="bids">No-Trump</li>
+						<ul>
+							<li>No-Trump is easy. Highest card wins. Joker is the highest card, then each suit is treated independently. The order goes from Ace, King, Queen, Jack, 10 down to 4.</li>
+							<li>You must follow suit unless you play the Joker.</li>
+							<li>The Joker can be played at any time, since it is all the suits and a suit of its own.</li>
+							<li>If the Joker is the first card played. The player must call the suit for the others to follow.</li>
+						</ul>
+				</ul>
+		</ul>
+	</div>
+	</div>
+	<div id="playing">
+	<div class="container">
+		<h2>Playing</h2>
+			<p>The player with the highest bid becomes the "Contracor." The Contractor takes the widdow into their hand without showing it to the rest of the players and makes the best 10 card hand out of the 15*. Discard the 5 cards that you do not wish to keep in your hand. The goal of this is to make the best possible hand. The Contractor does not have to keep all suits in their hand. We advise not throwing trump away.
+				<ul style="list-style-type: none">
+					<li>*Remember that if playing Nello, the Contractor must discard six cards, as the Widdow had six cards (one donated from their teammate.</li>
+				</ul>
+			</p>
+			<p>Once ready, the Contractor leads, and may lead any card at any time. Play proceeds clockwise (to the left) of the person who leads. Each player must follow suit. If unable to follow suit, a player may play any card. </p>
+			<p>A trick is won by the highest trump, or if a no-trump card is played, it is won by the highest card of the suit led. The winner of a trick leads next.</p>
+			<p>The Contractor, collects their team's tricks</p>
+			<p>A member of the oposing team collects the tricks won by their team.</p> 
+			<p>Play continues until all 10 tricks have been played. Upon finishing the 10th trick, the score is then calculated.</p>
+	</div>
+	</div>	
+	<div id="score">
+	<div class="container">
+		<h2>Scoring</h2>
+			<p>If the Contractor wins as many tricks as bid, the team scores the number of points called for in the scoring table (see below). There is no credit for extra tricks taken over the contracted number, except if the Contractor's team takes all 10 tricks, then they get a score of 250*. Winning all 10 tricks is called a "Grand Slam".
+				<ul style="list-style-type: none">
+					<li>*A score of 250 is given if the Contracted bid total was worth less than 250. If the Contract is worth more than 250 then the Contracted points are given.</li>
+				</ul>
+			</p>
+			<p>If the Contractor fails to win as many tricks as bid, the oposing team gains 10 points for each trick taken and the Contracting team goes negative the point total of the bid. Example, if the Contractor bid Seven Hearts and the oposing team took four of the 10 tricks. The oposing team gains 40 points and the Contracting team goes negative 200 points. It is possible for a team to have a negative score which is refered to as "in the hole" because of the common practice of drawing a ring around a negative score.
+			</p>
+			<table class="scoring_table">
+				<tbody class="scoring_table">
+					<thead><th colspan="7">Scoring Table</th></thead>
+						<tr>
+							<td> </td>
+							<td> </td>
+							<th class="no_trick">6</th>
+							<th class="no_trick">7</th>
+							<th class="no_trick">8</th>
+							<th class="no_trick">9</th>
+							<th class="no_trick">10</th>
+						</tr>				
+						<tr>
+							<td></td>
+							<td></td>
+							<th class="trick">Tricks</th>
+							<th class="trick">Tricks</th>
+							<th class="trick">Tricks</th>
+							<th class="trick">Tricks</th>
+							<th class="trick">Tricks</th>
+						</tr>
+						<tr>
+							<td class="scoring_suits"><img src="http://goo.gl/iXA1c8"/></td>
+							<td>TRUMP</td>
+							<td class="score">40</td>
+							<td class="score">140</td>
+							<td class="score">240</td>
+							<td class="score">340</td>
+							<td class="score">440</td>
+						</tr>
+						<tr>
+							<td class="scoring_suits"><img src="http://goo.gl/HWiofU"/></td>
+							<td>TRUMP</td>
+							<td class="score">60</td>
+							<td class="score">160</td>
+							<td class="score">260</td>
+							<td class="score">360</td>
+							<td class="score">460</td>
+						</tr>
+						<tr>
+							<td class="scoring_suits"><img src="http://goo.gl/gF4Uvk"/></td>
+							<td>TRUMP</td>
+							<td class="score">80</td>
+							<td class="score">180</td>
+							<td class="score">280</td>
+							<td class="score">380</td>
+							<td class="score">480</td>
+						</tr>
+						<tr>
+							<td class="scoring_suits"><img src="http://goo.gl/GP9ETy"/></td>
+							<td>TRUMP</td>
+							<td class="score">100</td>
+							<td class="score">200</td>
+							<td class="score">300</td>
+							<td class="score">400</td>
+							<td class="score">500</td>
+						</tr>
+						<tr>
+							<td>NO</td>
+							<td>TRUMP</td>
+							<td class="score">120</td>
+							<td class="score">220</td>
+							<td class="score">320</td>
+							<td class="score">420</td>
+							<td class="score">520</td>
+						</tr>
+				</tbody>
+			</table>	
+			<p><strong>Winning the Game</strong>
+				<ul style="list-style-type: none">
+					<li>To win the game, your team must score over 500 points.</li>
+					<li>If you have a score of 500 in the hole you lose.</li>
+					<li>If the Contractor and the opposing team both reach 500 at the same time, the Contractor's team wins the game.</li>
+				</ul>
+			</p>	
+	</div>
+	</div>	
+	<div id="footer">
+	<div class="container">
+	<p>Game instructions modified from original source: <a href="http://www.bicyclecards.ca/game-rules/five-hundred/124.php?page_id=32"/>Five Hundred</a></p>
+	</div>
+	</div>
+	</body>
+</html>
+
+
