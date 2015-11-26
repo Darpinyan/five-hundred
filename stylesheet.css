@@ -1,0 +1,127 @@
+#nav_container {
+	background-color: #ccffff;
+	height: 100px;
+}
+#nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+#nav li {
+	display: inline;
+	height: 45px;
+	width: 100%;
+	background-color: #e5ffff;
+}
+ul .pull-left {
+	float: left;
+	
+}
+ul .pull-right {
+	float: right;
+}
+.jumbotron {
+  height: 500px;
+  background-image: url("https://goo.gl/goxJmL");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+}
+.jumbotron .container {
+	position: relative;
+	border-radius: 5%;
+	background-color: #e5ffee;
+	top:100px;
+}
+.cards-trump {
+	border-radius: 5%;
+	border: 5px solid;
+	width: 100px; 
+	background-color: #000000;
+}
+.cards-plain {
+	border-radius: 5%;
+	border: 5px solid;
+	width: 100px; 
+	background-color: #000000;
+}
+.team-table {
+	margin-left: auto;
+	margin-right: auto;
+}
+.center {
+	border-radius: 15%;
+	border: 10px solid #3B5323;
+	background-color: #608341;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	text-align: center;	
+	font: 15px black;
+	
+}
+.player-jedi {
+	border-radius: 5%;
+	border: 5px solid #2FF923;
+	background-color: #000000;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	text-align: center;
+	vertical-align: bottom;
+	color: #2FF923;
+}
+.player-sith {
+	border-radius: 5%;
+	border: 5px solid #CE0C2C;
+	background-color: #000000;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	text-align: center;
+	vertical-align: bottom;
+	color: #CE0C2C;
+}
+.player-pic {
+	display: block;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	vertical-align: top;
+}
+.bidding {
+	font-weight: bold;
+}
+.bids {
+	font-weight: bold;
+}
+th.no_trick {
+	font-weight: bold;
+}
+th.trick{
+	font-size: 10px;
+}
+.scoring_table {
+	border: 2px solid #000000;
+	background-color: #e5f2ff;
+	margin-left: auto;
+	margin-right: auto;
+}
+.scoring_suits img{
+	height: 20px;
+	width: 20px;
+}
+td.score {
+	text-align: right;
+}
+#footer {
+	height: 50px; 
+	background-color: #e5ffee;
+	border-top-style: solid;
+	border-top-color: #008000;
+	text-align: right; 
+	
+	
+}
